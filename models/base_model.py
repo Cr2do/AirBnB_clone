@@ -44,7 +44,8 @@ class BaseModel:
         self.updated_at = datetime.now()
 
     def __str__(self):
-        return str("[" + self.__class__.__name__ + "] (" + self.id + ") " + str(self.__dict__))
+        return str("[" + self.__class__.__name__ + "] (" + self.id + ") " +
+                   str(self.__dict__))
 
     def to_dict(self):
         self.created_at = self.created_at.strftime("%Y-%m-%dT%H:%M:%S.%f")
