@@ -7,15 +7,38 @@ from datetime import datetime
 import uuid
 import json
 
+
 class BaseModel:
     """
     BaseModel Class
     """
 
-    def __init__(self):
-        self.id = uuid.uuid4().__str__()
-        self.created_at = datetime.today()
-        self.updated_at = datetime.today()
+    def __init__(self, *args, **kwargs):
+        # id
+        if "id" in kwargs:
+            self.id = kwargs.get("id")
+        else:
+            self.id = uuid.uuid4().__str__()
+
+        # created at
+        if "created_at" in kwargs:
+            self.created_at = datetime.fromisoformat(kwargs.get("created_at"))
+        else:
+            self.created_at = datetime.today()
+
+        # updated at
+        if "updated_at" in kwargs:
+            self.updated_at = datetime.fromisoformat(kwargs.get("updated_at"))
+        else:
+            self.updated_at = datetime.today()
+
+        # name
+        if "name" in kwargs:
+            self.name = kwargs.get("name")
+
+        # my_number
+        if "my_number" in kwargs:
+            self.my_number = kwargs.get("my_number")
 
     def save(self):
         self.updated_at = datetime.now()
