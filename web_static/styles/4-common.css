@@ -14,10 +14,11 @@ body{
 .locations, .amenities{
     height: 100%;
     width: 25%;
-    margin-left: 30px;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .locations h3, .amenities h3{
