@@ -18,11 +18,14 @@
     border: none;
     border-radius: 4px;
     margin-right: 30px;
-    vertical-align: middle;
     position: absolute;
     right: 0;
 }
 
 .filters button:hover{
     opacity: 90%;
+}
+
+.filters div:first-child{
+    border-right: 1px solid #DDDDDD;
 }
