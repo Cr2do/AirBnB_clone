@@ -46,6 +46,7 @@
     box-sizing: border-box;
     padding-left: 30px;
     padding-bottom: 20px;
+    display: none;
 }
 
 .popover h2{
@@ -59,4 +60,12 @@
 
 .popover ul li {
     list-style: none;
+}
+
+.locations:hover .popup-locations{
+    display: block;
+}
+
+.amenities:hover .popup-amenities{
+    display: block;
 }
