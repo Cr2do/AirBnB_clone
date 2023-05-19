@@ -1,0 +1,73 @@
+#amenities {
+    margin-top: 40px;
+}
+
+#amenities > h2{
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+#amenities > ul{
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+}
+
+#amenities > ul .tv {
+    background-image: url('../images/icon_tv.png');
+    height: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 55px;
+}
+
+#amenities > ul .wifi {
+    background-image: url('../images/icon_wifi.png');
+    height: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 55px;
+}
+
+#amenities > ul .pets {
+    background-image: url('../images/icon_pets.png');
+    height: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 55px;
+}
+
+.reviews {
+    margin-top: 40px;
+}
+
+.reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.reviews > ul{
+    vertical-align: middle;
+    text-align: justify;
+    padding: 0 0.5rem;
+    list-style-type: none;
+    line-height: 0.5;
+}
+
+.reviews > ul h3{
+    font-size: 14px;
+}
+
+.reviews > ul p{
+    font-size: 12px;   
+}

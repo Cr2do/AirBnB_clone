@@ -11,7 +11,7 @@ body{
     margin: 30px auto;
 }
 
-.locations, .amenities{
+.filters .locations, .filters .amenities{
     height: 100%;
     width: 25%;
     padding-left: 30px;
